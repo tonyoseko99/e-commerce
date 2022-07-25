@@ -1,16 +1,15 @@
 import React from "react";
+import Item from "./Item";
 
-function Item({item}){
-    return (
-        <div className="card-item">
+function Items({item}){
+    return(
+        <div className="card">
             <img src={item.image} alt="image"></img>
             <p>{item.title}</p>
             <p id="description">{item.description}</p>
             <h2>{item.price}</h2>
-            <button>Add to Cart</button>
         </div>
     )
-    
-}
 
-export default Item;
+}
+export default Items;

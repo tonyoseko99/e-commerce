@@ -1,12 +1,12 @@
 import React, {useState} from "react";
-import Item from "./Item";
+import Items from "./Items";
 
 function Home({items}){
 
     return(
         <div className="card-container">
             {items.map((item)=>(
-                <Item item={item} key={item.id} />
+                <Items item={item} key={item.id} />
             ))}
         </div>
     )
