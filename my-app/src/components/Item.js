@@ -7,6 +7,7 @@ function Item({item}){
             <p>{item.title}</p>
             <p>{item.description}</p>
             <h2>{item.price}</h2>
+            <button>Add to cart</button>
         </div>
     )
 
