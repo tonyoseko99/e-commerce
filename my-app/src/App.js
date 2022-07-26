@@ -1,5 +1,3 @@
-import logo from './logo.svg';
-import { ReactDOM as BrowserRouter } from 'react-router-dom';
 import React, {useState, useEffect} from 'react';
 import './App.css';
 import Navbar from './components/Navbar';
@@ -10,9 +8,9 @@ function App() {
 
   // fetch data from the API to populate on the homepage
   useEffect(()=>{
-    fetch('http://localhost:3000/products')
+    fetch('https://tonyoseko99.github.io/json-api/db.json')
     .then(res => res.json())
-    .then(response => setItems(response))
+    .then(response => setItems(response.products))
   }, [])
 
   return (
