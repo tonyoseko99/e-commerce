@@ -10,7 +10,7 @@ function App() {
 
   // fetch data from the API to populate on the homepage
   useEffect(()=>{
-    fetch('https://fakestoreapi.com/products')
+    fetch('http://localhost:3000/products')
     .then(res => res.json())
     .then(response => setItems(response))
   }, [])
