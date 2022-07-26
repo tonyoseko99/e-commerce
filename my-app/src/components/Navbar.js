@@ -13,7 +13,7 @@ function Navbar(){
                 </li>
                 <li>Account</li>
                 <li>Cart</li>
-                <li>Categories</li>
+                <li className="dropbtn">Categories</li>
             </ul>
         </nav>
     )
