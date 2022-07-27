@@ -13,22 +13,18 @@ function App() {
     fetch(url)
     .then(res => res.json())
     .then(response => setItems(response.products))
-  }, [])
+  }, []);
 
-  // search through the data
-  useEffect(()=>{
-    fetch(url, {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({
-
-      })
-    })
-  }, [])
+  // search data
+  const [searchData, useSearchData] = useState(items);
+  function handleFormSubmit(event){
+    event.preventDefault();
+    searchData(items);
+  }
 
   return (
     <div className="root">
-      <Navbar items={items} />
+      <Navbar />
       <Home items={items} />
     </div>
   );
