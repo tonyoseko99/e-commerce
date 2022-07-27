@@ -1,19 +1,20 @@
 import React from "react";
+import { Route, Switch } from "react-router-dom";
+import Search from "./Search";
+import AccountContainer from "./AccountContainer";
+import Cart from "./Cart";
+import Categories from "./Categories";
 
-function Navbar(){
+function Navbar({items}){
     return(
         <nav className="navbar">
             <h1>Jenga Shop</h1>
             <ul className="navbar-list">
-                <li>
-                    <form >
-                        <input type="text" id="search-input" placeholder="search item.."></input>
-                        <button type="submit" id="btn-search">Search</button>
-                    </form>
-                </li>
-                <li>Account</li>
-                <li>Cart</li>
-                <li className="dropbtn">Categories</li>
+                    <Search items={items}/>
+                    <AccountContainer />
+                    <Cart />
+                    <Categories />
+
             </ul>
         </nav>
     )
