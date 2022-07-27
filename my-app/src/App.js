@@ -3,6 +3,9 @@ import { Route, Switch } from "react-router-dom";
 import './App.css';
 import Navbar from './components/Navbar';
 import Home from './components/Home';
+import Items from './components/Items';
+import Item from './components/Item';
+import Footer from './components/Footer';
 
 function App() {
   const url = 'https://tonyoseko99.github.io/json-api/db.json';
@@ -26,6 +29,7 @@ function App() {
     <div className="root">
       <Navbar />
       <Home items={items} />
+      <Footer />
     </div>
   );
 }
