@@ -1,11 +1,12 @@
 import React, {useState, useEffect} from 'react';
-import { Route, Switch } from "react-router-dom";
 import './App.css';
 import Navbar from './components/Navbar';
 import Home from './components/Home';
 import Items from './components/Items';
 import Item from './components/Item';
 import Footer from './components/Footer';
+
+import {BrowserRouter, Routes, Route} from 'react-router-dom';
 
 function App() {
   const url = 'https://tonyoseko99.github.io/json-api/db.json';
@@ -18,17 +19,16 @@ function App() {
     .then(response => setItems(response.products))
   }, []);
 
-  // search data
-  const [searchData, useSearchData] = useState(items);
-  function handleFormSubmit(event){
-    event.preventDefault();
-    searchData(items);
-  }
-
   return (
     <div className="root">
-      <Navbar />
-      <Home items={items} />
+      <Navbar items={items}/>
+      <BrowserRouter>
+        <Routes>
+          <Route exact path='/' element={<Home items={items} />} />
+          <Route  exact path='/items' element={<Items />} />
+          <Route exact path='/item' element={<Item />} />
+        </Routes>
+      </BrowserRouter>
       <Footer />
     </div>
   );

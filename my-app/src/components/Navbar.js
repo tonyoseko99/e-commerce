@@ -7,7 +7,7 @@ function Navbar({items}){
         <nav className="navbar">
             <h1>Jenga Shop</h1>
             <ul className="navbar-list">
-                    <Search />
+                <Search items={items}/>
 
             </ul>
         </nav>

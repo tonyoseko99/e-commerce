@@ -142,4 +142,10 @@ body{
 }
 
 /* footer */
-
+.footer{
+  background: white;
+  padding: 10px;
+  text-align: center;
+  justify-content: center;
+  color: #f9992d;
+}

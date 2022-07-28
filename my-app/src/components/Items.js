@@ -1,4 +1,5 @@
 import React from "react";
+import Item from "./Item";
 
 function Items({item}){
     return(
@@ -6,7 +7,8 @@ function Items({item}){
             <img src={item.image} alt="image"></img>
             <p>{item.title}</p>
             <p id="description">{item.description}</p>
-            <h2>{item.price}</h2>
+            <h2>$ {item.price}</h2>
+            <button>Buy</button>
         </div>
     )
 
