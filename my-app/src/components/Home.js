@@ -1,9 +1,14 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Navbar from "./Navbar";
 import Items from "./Items";
 
 function Home({ items }) {
   const [searchItems, setSearchItems] = useState(items);
+
+  useEffect(()=>{
+    setSearchItems(items);
+  }, [items])
+
   return (
     <>
       <Navbar />
@@ -12,22 +17,23 @@ function Home({ items }) {
         <button className="category">Women </button>
         <button className="category">Men </button>
         <button className="category">Jewelery</button>
+        {/* search functionality */}
         <input
           id="search-input"
           type="text"
           placeholder="search..."
           onChange={(e) => {
-            let search = items.filter((item) =>
-              item.title.toLowerCase().includes(e.target.value)
+            let query = items.filter((item) =>
+              item.title.toLowerCase().includes(e.target.value.toLowerCase())
             );
-            console.log("search", search);
-            setSearchItems(search);
+            console.log("search", query);
+            setSearchItems(query);
           }}
-        ></input>
+        />
       </div>
 
       <div className="card-container">
-        {items.map((item) => {
+        {searchItems.map((item) => {
           return <Items item={item} key={item.id} />;
         })}
       </div>

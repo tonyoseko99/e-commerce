@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import './App.css';
 import Home from './components/Home';
 import Footer from './components/Footer';
-
+import {BrowserRouter as Router,Routes, Route, Link} from 'react-router-dom';
 function App() {
 
   const [items, setItems] = useState([]);
@@ -15,10 +15,11 @@ function App() {
   }, []);
 
   return (
-    <div className="root">
-      <Home items={items} />
-      <Footer />
-    </div>
+    <Router>
+      <Routes>
+        <Route exact path='/' element={<Home items={items}/>} />
+      </Routes>
+    </Router>
   );
 }
 
