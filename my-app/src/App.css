@@ -87,7 +87,6 @@ body {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  padding: 20px;
 }
 
 .categories button {
@@ -99,8 +98,13 @@ body {
   font-size: 18px;
 }
 
+.input{
+  text-align: center;
+}
+
 /* search form */
 #search-input {
+  width: 80%;
   text-align: center;
   font-size: 18px;
   border: 1px solid grey;
@@ -111,59 +115,28 @@ body {
   background-color: #f5f5f5;
 }
 
-/* drop down button */
-.dropbtn {
-  background-color: #f9992d;
-  color: white;
-  padding: 16px;
-  font-size: 16px;
-  border: none;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f1f1f1;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
-.dropdown:hover .dropbtn {
-  background-color: #3e8e41;
-}
-
 /* card section */
-
-.card-container {
-  margin: 20px 200px;
+.card-container{
   display: flex;
   flex-direction: row;
   flex-flow: row wrap;
-}
-.card {
-  height: 600px;
-  width: 25%;
-  background: #fff;
-  padding: 30px;
-  margin: 20px;
-  border-radius: 5px;
-  cursor: pointer;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.card img {
-  max-width: 100%;
-  height: 300px;
+.card{
+  height: 400px;
+  background: white;
+  margin: 10px;
+  padding: 15px;
+  text-align: center;
 }
-
-.card #description {
-  height: 100px;
-  line-height: 20px;
-  overflow: hidden;
+.card img{
+  height: 200px;
+  width: 200px;
+}
+.card h2{
+  width: 400px;
 }
 
 /* footer */
@@ -173,4 +146,6 @@ body {
   text-align: center;
   justify-content: center;
   color: #f9992d;
+  position: sticky;
+  margin-bottom: 0;
 }

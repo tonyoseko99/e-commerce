@@ -1,22 +1,28 @@
 import React, { useEffect, useState } from "react";
-import Navbar from "./Navbar";
 import Items from "./Items";
+import { Link } from "react-router-dom";
+import Item from "./Item";
 
-function Home({ items }) {
-  const [searchItems, setSearchItems] = useState(items);
+function Home() {
+  const [items, setItems] = useState([]);
+  const [searchItems, setSearchItems] = useState([]);
+  const url = "https://fakestoreapi.com/products";
 
-  useEffect(()=>{
+  useEffect(() => {
+    fetch(url)
+      .then((response) => response.json())
+      .then((response) => {
+        setItems(response);
+      });
+  }, []);
+
+  useEffect(() => {
     setSearchItems(items);
-  }, [items])
+  }, [items]);
 
   return (
-    <>
-      <Navbar />
-      <div className="categories">
-        <button className="category">All</button>
-        <button className="category">Women </button>
-        <button className="category">Men </button>
-        <button className="category">Jewelery</button>
+    <div className="container">
+      <div className="input">
         {/* search functionality */}
         <input
           id="search-input"
@@ -34,10 +40,14 @@ function Home({ items }) {
 
       <div className="card-container">
         {searchItems.map((item) => {
-          return <Items item={item} key={item.id} />;
+          return (
+            <Link to={`/items/${item.id}`} key={item.id}>
+              <Items item={item} />
+            </Link>
+          );
         })}
       </div>
-    </>
+    </div>
   );
 }
 export default Home;

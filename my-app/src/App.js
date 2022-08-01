@@ -1,25 +1,23 @@
-import React, { useEffect, useState } from 'react';
-import './App.css';
-import Home from './components/Home';
-import Footer from './components/Footer';
-import {BrowserRouter as Router,Routes, Route, Link} from 'react-router-dom';
+import React, { useEffect, useState } from "react";
+import "./App.css";
+import Home from "./components/Home";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import Item from "./components/Item";
 function App() {
-
-  const [items, setItems] = useState([]);
-  const url = "https://tonyoseko99.github.io/json-api/db.json";
-
-  useEffect(()=>{
-    fetch(url)
-    .then(response => response.json())
-    .then(response => setItems(response.products))
-  }, []);
-
   return (
-    <Router>
-      <Routes>
-        <Route exact path='/' element={<Home items={items}/>} />
-      </Routes>
-    </Router>
+    <div className="root">
+      <Navbar />
+      <Router>
+        <Routes>
+          <Route exact path="/" element={<Home />} />
+          <Route path="/items/id:" element={<Item />} />
+        </Routes>
+      </Router>
+      <Footer />
+      
+    </div>
   );
 }
 

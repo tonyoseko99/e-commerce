@@ -1,4 +1,6 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import Item from "./Item";
 
 function Items({item}) {
   return (
@@ -7,7 +9,7 @@ function Items({item}) {
         <img src={item.image} alt="title"></img>
         <h2>{item.title}</h2>
         <h3>{item.price}</h3>
-        <button>click to buy</button>
+        <Link to={`/items/${item.id}`}>Click to buy </Link>
       </div>
     </>
   );
