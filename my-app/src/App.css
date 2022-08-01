@@ -56,6 +56,10 @@ body {
   cursor: pointer;
 }
 
+.navbar h1{
+  font-size: 32px;
+}
+
 .navbar .navbar-list {
   display: flex;
   flex-direction: row;
