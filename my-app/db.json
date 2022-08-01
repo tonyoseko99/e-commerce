@@ -81,13 +81,76 @@
       "image": "https://fakestoreapi.com/img/61U7T1koQqL._AC_SX679_.jpg"
     },
     {
-      "id": 11
+      "id": 11,
+      "title": "WD 4TB Gaming Drive Works with Playstation 4 Portable External Hard Drive",
+      "price": 114.00,
+      "category": "electronics",
+      "description": "Expand your PS4 gaming experience, Play anywhere Fast and easy, setup Sleek design with high capacity, 3-year manufacturer's limited warranty",
+      "image": "https://fakestoreapi.com/img/61mtL65D4cL._AC_SX679_.jpg"
     },
     {
-      "id": 12
+      "id": 12,
+      "title": "Acer SB220Q bi 21.5 inches Full HD (1920 x 1080) IPS Ultra-Thin",
+      "price": 711.00,
+      "category": "electronics",
+      "description": "21. 5 inches Full HD (1920 x 1080) widescreen IPS display And Radeon free Sync technology. No compatibility for VESA Mount Refresh Rate: 75Hz - Using HDMI port Zero-frame design |",
+      "image": "https://fakestoreapi.com/img/81QpkIctqPL._AC_SX679_.jpg" 
     },
     {
-      "id": 13
+      "id": 13,
+      "title": "Gaming monitor",
+      "price": 811.00,
+      "category": "electronics",
+      "description": "49 INCH SUPER ULTRAWIDE 32:9 CURVED GAMING MONITOR with dual 27 inch screen side by side QUANTUM DOT (QLED) TECHNOLOGY, HDR support and factory calibration provides stunningly realistic",
+      "image": "https://fakestoreapi.com/img/81Zt42ioCgL._AC_SX679_.jpg"
+    },
+    {
+      "id": 14,
+      "title": "BIYLACLESEN Women's 3-in-1 Snowboard Jacket Winter Coats",
+      "price": 81.00,
+      "category": "women's clothing",
+      "description": "Note:The Jackets is US standard size, Please choose size as your usual wear Material: 100% Polyester; Detachable Liner Fabric: Warm Fleece. Detachable Functional Liner: Skin Friendly, Light",
+      "image": "https://fakestoreapi.com/img/51Y5NI-I5jL._AC_UX679_.jpg"
+    },
+    {
+      "id": 15,
+      "title": "Lock and Love Women's Removable Hooded Faux Leather Moto Biker Jacket",
+      "price": 11.00,
+      "category": "women's clothing",
+      "description": "100% POLYURETHANE(shell) 100% POLYESTER(lining) 75% POLYESTER 25% COTTON (SWEATER), Faux leather material for style and comfort / 2 pockets of front",
+      "image": "https://fakestoreapi.com/img/81XH0e8fefL._AC_UY879_.jpg"
+    },
+    {
+      "id": 16,
+      "title": "Rain Jacket Women Windbreaker Striped Climbing Raincoats",
+      "price": 61.00,
+      "category": "women's clothing",
+      "description": "Lightweight perfet for trip or casual wear---Long sleeve with hooded, adjustable drawstring waist design. Button and zipper front closure raincoat, fully stripes Lined",
+      "image": "https://fakestoreapi.com/img/71HblAHs5xL._AC_UY879_-2.jpg"
+    },
+    {
+      "id": 17,
+      "title": "MBJ Women's Solid Short Sleeve Boat Neck V",
+      "price": 51.00,
+      "category": "women's clothing",
+      "description": "95% RAYON 5% SPANDEX, Made in USA or Imported, Do Not Bleach, Lightweight fabric with great stretch for comfort, Ribbed on sleeves and neckline / Double stitching on bottom hem",
+      "image": "https://fakestoreapi.com/img/71z3kpMAYsL._AC_UY879_.jpg"
+    },
+    {
+      "id": 18,
+      "title": "Opna Women's Short Sleeve Moisture",
+      "price": 11.00,
+      "category": "women's clothing",
+      "description": "100% Polyester, Machine wash, 100% cationic polyester interlock, Machine Wash & Pre Shrunk for a Great Fit, Lightweight, roomy and highly breathable with moisture wicking fabric",
+      "image": "https://fakestoreapi.com/img/51eg55uWmdL._AC_UX679_.jpg"
+    },
+    {
+      "id": 19,
+      "title": "Gaming monitor",
+      "price": 811.00,
+      "category": "electronics",
+      "description": "49 INCH SUPER ULTRAWIDE 32:9 CURVED GAMING MONITOR with dual 27 inch screen side by side QUANTUM DOT (QLED) TECHNOLOGY, HDR support and factory calibration provides stunningly realistic",
+      "image": "https://fakestoreapi.com/img/81Zt42ioCgL._AC_SX679_.jpg"
     }
   ]
 }
