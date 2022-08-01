@@ -14,7 +14,7 @@ function Item(){
     return(
         <>
             <div className="item-info" key={product.id}>
-                <img src={product.image} alt="image"></img>
+                <img src={product.image} alt={product.title}></img>
                 <h2>{product.title}</h2>
                 <p>{product.description}</p>
                 <h2>Add to cart</h2>

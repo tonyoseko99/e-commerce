@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import Items from "./Items";
-import { Link } from "react-router-dom";
 
 function Home() {
   const [items, setItems] = useState([]);
