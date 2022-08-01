@@ -5,13 +5,13 @@ import { Link } from "react-router-dom";
 function Home() {
   const [items, setItems] = useState([]);
   const [searchItems, setSearchItems] = useState([]);
-  const url = "https://fakestoreapi.com/products/";
+  const url = "https://tonyoseko99.github.io/json-api/db.json";
 
   useEffect(() => {
     fetch(url)
       .then((response) => response.json())
       .then((response) => {
-        setItems(response);
+        setItems(response.products);
       });
   }, []);
 

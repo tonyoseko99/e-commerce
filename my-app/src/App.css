@@ -44,11 +44,11 @@
 body {
   margin: 0;
   padding: 0;
-  background: #f9992d;
+  background: #EDE5F3;
 }
 
 .navbar {
-  background: #fff;
+  background: #EDE5F3;
   padding: 10px 0;
   display: flex;
   align-items: center;
@@ -104,7 +104,7 @@ body {
 
 /* search form */
 #search-input {
-  width: 80%;
+  width: 100%;
   text-align: center;
   font-size: 18px;
   border: 1px solid grey;
@@ -113,6 +113,7 @@ body {
   padding: 12px;
   outline: 0;
   background-color: #f5f5f5;
+  margin: 10px;
 }
 
 /* card section */
@@ -121,31 +122,43 @@ body {
   flex-direction: row;
   flex-flow: row wrap;
   align-items: center;
-  justify-content: space-between;
+  
 }
 
 .card{
-  height: 400px;
+  border-radius: 10px;
   background: white;
   margin: 10px;
-  padding: 15px;
+  padding: 25px;
   text-align: center;
+  color: black;
+  text-decoration: none;
 }
 .card img{
   height: 200px;
   width: 200px;
 }
 .card h2{
+  height: 55px;
+  border-bottom: 1px solid black;
   width: 400px;
+  font-size: 20px;
+  text-decoration: none;
+  text-align: left;
 }
-
+.card p{
+  width: 400px;
+  height: 200px;
+  text-align: left;
+  line-height: 20px;
+}
 /* footer */
 .footer {
-  background: white;
+  background: #EDE5F3;
   padding: 10px;
   text-align: center;
   justify-content: center;
-  color: #f9992d;
+  color: black;
   position: sticky;
   margin-bottom: 0;
 }

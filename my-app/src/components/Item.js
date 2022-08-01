@@ -13,7 +13,7 @@ function Item(){
     }, [id])
     return(
         <>
-            <div className="item-info">
+            <div className="item-info" key={product.id}>
                 <img src={product.image} alt="image"></img>
                 <h2>{product.title}</h2>
                 <p>{product.description}</p>
