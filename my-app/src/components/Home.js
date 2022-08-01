@@ -1,18 +1,17 @@
 import React, { useEffect, useState } from "react";
 import Items from "./Items";
 import { Link } from "react-router-dom";
-import Item from "./Item";
 
 function Home() {
   const [items, setItems] = useState([]);
   const [searchItems, setSearchItems] = useState([]);
-  const url = "https://tonyoseko99.github.io/json-api/db.json";
+  const url = "https://fakestoreapi.com/products/";
 
   useEffect(() => {
     fetch(url)
       .then((response) => response.json())
       .then((response) => {
-        setItems(response.products);
+        setItems(response);
       });
   }, []);
 
@@ -41,9 +40,9 @@ function Home() {
       <div className="card-container">
         {searchItems.map((item) => {
           return (
-            <Link to={`/items/${item.id}`} key={item.id}>
+            
               <Items item={item} />
-            </Link>
+            
           );
         })}
       </div>

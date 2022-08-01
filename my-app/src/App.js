@@ -3,8 +3,9 @@ import "./App.css";
 import Home from "./components/Home";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route} from "react-router-dom";
 import Item from "./components/Item";
+import Items from "./components/Items";
 function App() {
   return (
     <div className="root">
@@ -12,7 +13,7 @@ function App() {
       <Router>
         <Routes>
           <Route exact path="/" element={<Home />} />
-          <Route path="/items/id:" element={<Item />} />
+          <Route path="/items/{id}:" element={<Item />} />
         </Routes>
       </Router>
       <Footer />
